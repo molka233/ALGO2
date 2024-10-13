@@ -1,0 +1,30 @@
+ALGORITHM Tri par sertion
+VAR
+    i,j,min_idx,n : INTEGER
+    tab:ARRAY_OF INTEGER;
+BEGIN
+      n := tab.length ;
+
+   
+
+   FOR i FROM 0 TO n-2 STEP 1 DO
+
+       min_idx := i ;
+
+       FOR j FROM i TO n-i-2 STEP 1 DO
+
+           IF (tab[j]<tab[min_idx]) ALORS
+
+               min_idx := j ;
+
+           END_IF
+
+       END_FOR
+
+   
+
+   swap(arr[min_idx],arr[i])
+
+   END_FOR
+END
+
